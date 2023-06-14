@@ -84,6 +84,7 @@ body {
   padding: 0 1rem;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 .nav-logo {
@@ -94,19 +95,43 @@ body {
 }
 
 .nav-title {
-  font-family: 'Righteous', cursive;
+  margin-right: auto;
 }
 
 .nav-container2 {
   display: flex;
-  margin-left: auto;
+  flex-direction: column;
+  width: 50%;
   justify-content: space-between;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fa-bars {
+  transition: .5s all ease;
+  scale: 1.5;
+}
+
+.fa-xmark {
+  position: absolute;
+  margin-top: 1rem;
+  right: 200px;
+  scale: 1.7;
+  transition: .5s all ease;
+}
+
+.fa-bars:hover,
+.fa-xmark:hover {
+  color: rgb(46, 129, 245);
 }
 
 .nav-item {
   list-style: none;
-  margin-left: 1rem;
-  font-family: 'Righteous', cursive;
+  margin: 1rem 2rem 1rem auto;
+  width: 3rem;
+  /* font-family: 'Righteous', cursive; */
   transition: .5s all ease;
 }
 

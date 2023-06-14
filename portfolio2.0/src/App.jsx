@@ -3,9 +3,17 @@ import Nav from "./Nav"
 import Hero from "./Hero"
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false)
+
+  function toggleMenu() {
+    setShowMenu(prev => !prev)
+  }
   return (
     <div>
-      <Nav />
+      <Nav
+        showMenu={showMenu}
+        toggleMenu={() => toggleMenu()}
+      />
       <Hero />
     </div>
   )
