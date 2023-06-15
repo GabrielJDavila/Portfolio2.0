@@ -76,6 +76,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
 }
 
 .nav-container1 {
@@ -101,12 +102,13 @@ body {
 .nav-container2 {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
-  background: white;
+  width: 0;
+  justify-content: center;
+  background: rgb(99, 99, 99);
   position: absolute;
   top: 0;
   right: 0;
+  transition: .5s all ease;
 }
 
 .fa-bars {
@@ -117,31 +119,34 @@ body {
 .fa-xmark {
   position: absolute;
   margin-top: 1rem;
-  right: 200px;
+  right: 0px;
   scale: 1.7;
   transition: .5s all ease;
+  color: white;
 }
 
 .fa-bars:hover,
 .fa-xmark:hover {
-  color: rgb(46, 129, 245);
+  color: rgb(107, 169, 255);;
 }
 
 .nav-item {
   list-style: none;
-  margin: 1rem 2rem 1rem auto;
-  width: 3rem;
+  text-align: center;
+  margin: 2.5rem auto;
+  width: 6rem;
   /* font-family: 'Righteous', cursive; */
   transition: .5s all ease;
+  color: white;
 }
 
 .nav-item:hover {
   scale: 1.1;
-  color: rgb(46, 129, 245);
+  color: rgb(107, 169, 255);
 }
 
 .hero-container {
-  background: rgb(46, 129, 245);
+  background: rgb(107, 169, 255);;
   padding: 1rem;
 }
 
