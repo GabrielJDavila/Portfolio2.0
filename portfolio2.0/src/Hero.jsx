@@ -2,9 +2,10 @@
 export default function Hero() {
     return (
         <div className="hero-container">
+            <img src="./src/assets/selfportrait2.png" className="hero-logo"></img>
             <h1 className="hero-title">Hi, I'm Gabriel</h1>
-            <p className="hero-description">I'm a passionate frontend web developer based out of Aurora, Illinois, US. I love solving problems, flexing my creative muscles, and making beatiful applications.</p>
-            <button>See My Work</button>
+            <p className="hero-description">Frontend web developer</p>
+            {/* <button>See My Work</button> */}
         </div>
     )
 }
