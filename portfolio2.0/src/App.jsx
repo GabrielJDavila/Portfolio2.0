@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Nav from "./Nav"
 import Hero from "./Hero"
+import About from "./About"
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
@@ -15,6 +16,7 @@ function App() {
         toggleMenu={() => toggleMenu()}
       />
       <Hero />
+      <About />
     </div>
   )
 }
