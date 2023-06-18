@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Nav from "./Nav"
 import Hero from "./Hero"
 import About from "./About"
+import Projects from "./Projects"
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
@@ -9,6 +10,7 @@ function App() {
   function toggleMenu() {
     setShowMenu(prev => !prev)
   }
+
   return (
     <div>
       <Nav
@@ -17,6 +19,7 @@ function App() {
       />
       <Hero />
       <About />
+      <Projects />
     </div>
   )
 }
