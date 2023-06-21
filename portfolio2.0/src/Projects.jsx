@@ -6,9 +6,9 @@ export default function Projects() {
         return (
             <a key={index} href={item.source} className="portfolio-item">
                 <img src={item.img} alt={item.alt} className="portfolio-img img1" id={item.id}></img>
-                <p className={"project-name"}>{item.name}</p>
+                {/* <p className={"project-name"}>{item.name}</p>
                 <p>{item.tools}</p>
-                <p className="project-description">{item.description}</p>
+                <p className="project-description">{item.description}</p> */}
             </a>
         )
     })
