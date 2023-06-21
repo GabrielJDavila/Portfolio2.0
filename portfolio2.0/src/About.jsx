@@ -12,13 +12,18 @@ export default function About() {
             <div className="what-i-do-container">
                 <h2 className="about-title">What I do</h2>
                 <div className="job-description-container">
-                    <div className="design-container">
-                        <p>Design</p>
-                        <p>I strive to create beautiful and intuitive web apps, designing with both aestetics and usability in mind. In all of my projects, I lead my thought process with UI/UX, and have experience with Figma.</p>
-                    </div>
                     <div className="development-container">
-                        <p>Development</p>
-                        <p>I'm an adaptable and versatile frontend dev, and I specialize in React JS, and have knowledge and experience with Firebase. I have a great understanding of the fundamentals of web development: HTML, CSS, and Javascript.</p>
+                        <p>Design & Development</p>
+                        <p>I'm an adaptable and versatile frontend dev, and I specialize in React JS, and have a great understanding of the fundamentals of web development: HTML, CSS, and Javascript. I strive to create beautiful and intuitive web apps, designing with both aesthetics and usability in mind.</p>
+                    </div>
+                    <div className="design-container">
+                        <p>Skills</p>
+                        <div>
+                            <p>React JS</p>
+                            <p>Firebase</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div>
                     </div>
                 </div>
                 <button className="see-projects-btn" onClick={handleScroll}>My Projects</button>
