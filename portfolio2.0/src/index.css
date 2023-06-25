@@ -17,9 +17,11 @@ body {
   padding: 0 1rem;
   justify-content: left;
   /* border-bottom: 1px solid black; */
-  position: relative;
+  position: fixed;
   height: 4rem;
   z-index: 2;
+  width: 100%;
+  background: white;
 }
 
 /* .nav-title {
@@ -68,6 +70,7 @@ body {
   transition: .5s all ease;
   scale: 1.5;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .fa-xmark {
@@ -75,6 +78,7 @@ body {
   scale: 1.7;
   transition: .5s all ease;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .fa-bars:active,
@@ -97,6 +101,7 @@ body {
   /* font-family: 'Righteous', cursive; */
   transition: .5s all ease;
   color: white;
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -150,7 +155,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .job-description-container {
@@ -180,10 +185,6 @@ body {
   transition: ease all .5s;
 }
 
-.skill-icon:hover {
-  scale: 1.1;
-}
-
 .see-projects-btn {
   width: 150px;
   height: 60px;
@@ -196,10 +197,15 @@ body {
   font-size: 1.25rem;
   border-radius: 2px;
   transition: .5s ease all;
+  cursor: pointer;
 }
 
 .see-projects-btn:hover {
   scale: 1.2;
+}
+
+.who-i-am-container {
+  padding: 4rem 0;
 }
 
 .who-i-am-mini-title {
@@ -211,10 +217,14 @@ body {
   z-index: -1;
 }
 
+.who-i-am-description {
+  padding: 1rem 1.5rem;
+}
+
 .projects-container {
   background: rgb(68, 68, 68);
   color: white;
-  padding: 1rem 0 2rem 0;
+  padding: 4rem 0 2rem 0;
   border-top: 1px solid darkgray;
 }
 
@@ -275,8 +285,23 @@ a {
   text-decoration: none;
 }
 
+footer {
+  background: black;
+  padding: 4rem;
+}
+
+.footer-email {
+  margin: 0;
+  color:rgb(94, 171, 254)
+}
+
 /* media queries */
 @media screen and (min-width: 700px) {
+
+  .nav-container1 {
+    top: 0;
+  }
+
   .hero-container {
     background: rgb(107, 169, 255);;
     padding: 1rem;

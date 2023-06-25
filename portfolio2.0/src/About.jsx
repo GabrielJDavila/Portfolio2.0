@@ -9,7 +9,7 @@ export default function About() {
 
     return (
         <main className="about-container">
-            <div className="what-i-do-container">
+            <div className="what-i-do-container" id="services">
                 <h2 className="about-title">What I do</h2>
                 <div className="job-description-container">
                     <div className="development-container">
@@ -29,7 +29,7 @@ export default function About() {
                 </div>
                 <button className="see-projects-btn" onClick={handleScroll}>My Projects</button>
             </div>
-            <div className="who-i-am-container">
+            <div className="who-i-am-container" id="about">
                 <h2 className="about-title">Who I am</h2>
                 <p className="who-i-am-mini-title">Front-End Developer and fitness junkie from the US</p>
                 <p className="who-i-am-description">I'm a frontend web developer based out of Illnois, USA. I have caught the programming bug, and love creating web apps that solve real world problems and are fun to use!</p>

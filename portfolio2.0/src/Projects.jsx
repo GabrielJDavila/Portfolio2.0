@@ -14,7 +14,7 @@ export default function Projects() {
     })
 
     return (
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
             <h2 className="projects-title">My projects</h2>
             <p>A selection of my range of work</p>
             <div className="mini-proj-container">
