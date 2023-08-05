@@ -12,12 +12,16 @@ export default function About() {
             <div className="what-i-do-container" id="services">
                 <h2 className="about-title">What I do</h2>
                 <div className="job-description-container">
+                    <div className="design-container">
+                        <p className="what-i-do-mini-title">Design</p>
+                        <p className="what-i-do-descrip">I strive to create beautiful and intuitive web apps, designing with both aesthetics and usability in mind. UX leads my design process.</p>
+                    </div>
                     <div className="development-container">
-                        <p>Design & Development</p>
-                        <p>I'm an adaptable and versatile frontend dev, and I specialize in React JS, and have a great understanding of the fundamentals of web development: HTML, CSS, and Javascript. I strive to create beautiful and intuitive web apps, designing with both aesthetics and usability in mind.</p>
+                        <p className="what-i-do-mini-title">Development</p>
+                        <p className="what-i-do-descrip">I specialize in React JS, and have a great understanding of the fundamentals of web development: HTML, CSS, and Javascript, along with Firebase and React Router.</p>
                     </div>
                     <div className="design-container">
-                        <p>Skills</p>
+                        {/* <p>Skills</p> */}
                         <div className="skills-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="skill-icon"></img>        
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="skill-icon"></img> 

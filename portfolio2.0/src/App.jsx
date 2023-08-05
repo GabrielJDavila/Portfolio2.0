@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app-container">
       <Nav
         showMenu={showMenu}
         toggleMenu={() => toggleMenu()}

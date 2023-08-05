@@ -5,10 +5,9 @@ export default function Projects() {
     const projects = data.map((item, index) => {
         return (
             <a key={index} href={item.source} className="portfolio-item">
+                {/* <p className="project-descrip">{item.description}</p>
+                <p className="project-tools">{item.tools}</p> */}
                 <img src={item.img} alt={item.alt} className="portfolio-img img1" id={item.id}></img>
-                {/* <p className={"project-name"}>{item.name}</p>
-                <p>{item.tools}</p>
-                <p className="project-description">{item.description}</p> */}
             </a>
         )
     })
@@ -16,7 +15,7 @@ export default function Projects() {
     return (
         <div className="projects-container" id="projects">
             <h2 className="projects-title">My projects</h2>
-            <p>A selection of my range of work</p>
+            <p className="portfolio-descrip">A selection of my range of work</p>
             <div className="mini-proj-container">
                 {projects}
                 {/* <a href={props.source} className="portfolio-item">

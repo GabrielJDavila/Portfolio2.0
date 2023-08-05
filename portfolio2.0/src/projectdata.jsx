@@ -1,5 +1,14 @@
 export default [
     {
+        id: "item0",
+        name: "Income & Expense Tracker",
+        tools: "React, React Router, Firebase",
+        description: "Income and expense tracker for a small cleaning business. Simple and user-friendly application that has a real-world use case.",
+        source: "https://gregarious-moonbeam-69026b.netlify.app/",
+        img: "./src/assets/mgcleantracker.png",
+        alt: "screenshot of mgclean tracker"
+    },
+    {
         id: "item1",
         name: "Tenzies",
         tools: "React, CSS, HTML",
