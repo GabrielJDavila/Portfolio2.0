@@ -134,7 +134,7 @@ body {
 
 .what-i-do-container {
   background: rgb(75, 75, 75);
-  background-image: url("./css-cocodingbackground.jpg");
+  background-image: url("./dist/assets/css-cocodingbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(158, 157, 157);
