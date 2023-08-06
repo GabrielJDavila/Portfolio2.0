@@ -41,7 +41,7 @@ export default [
         tools: "Javascript, Firebase, CSS, HTML",
         description: "Endorsements lets users write an inspirational note to other coworkers. It saves data to a database and retrieves it to render.",
         source: "https://venerable-maamoul-37b869.netlify.app/",
-        img: "/dist/assets/endorsements-screenshot.png",
+        img: "/src/assets/endorsements-app.png",
         alt: "screenshot of endorsements app"
     }
 ]
