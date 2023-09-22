@@ -3,6 +3,7 @@ import Nav from "./Nav"
 import Hero from "./Hero"
 import About from "./About"
 import Projects from "./Projects"
+import TechStack from "./TechStack"
 import Footer from "./Footer"
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
         toggleMenu={() => toggleMenu()}
       />
       <Hero />
-      <About />
       <Projects />
+      <TechStack />
+      <About />
       <Footer />
     </div>
   )

@@ -2,10 +2,10 @@
 
 export default function About() {
 
-    function handleScroll() {
-        const projSection = document.querySelector(".projects-title")
-        projSection.scrollIntoView({behavior: "smooth"})
-    }
+    // function handleScroll() {
+    //     const projSection = document.querySelector(".projects-title")
+    //     projSection.scrollIntoView({behavior: "smooth"})
+    // }
 
     return (
         <main className="about-container">
@@ -14,20 +14,20 @@ export default function About() {
                 <div className="what-i-do-container2">
                     <div className="what-i-do-container3">
                         <div className="design-container">
-                            <p className="what-i-do-mini-title">Design</p>
+                            <h3 className="what-i-do-mini-title">Design</h3>
                             <p className="what-i-do-descrip">I strive to create beautiful and intuitive web apps, designing with both aesthetics and usability in mind. UX leads my design process.</p>
                         </div>
                         <div className="development-container">
-                            <p className="what-i-do-mini-title">Development</p>
+                            <h3 className="what-i-do-mini-title">Development</h3>
                             <p className="what-i-do-descrip">I specialize in React JS, and have a great understanding of the fundamentals of web development: HTML, CSS, and Javascript, along with Firebase and React Router.</p>
                         </div>
                     </div>
                 </div>
-                <button className="see-projects-btn" onClick={handleScroll}>My Projects</button>
+                {/* <button className="see-projects-btn" onClick={handleScroll}>My Projects</button> */}
             </div>
             <div className="who-i-am-container" id="about">
                 <h2 className="about-title">Who I am</h2>
-                <p className="who-i-am-mini-title">Front-End Developer and fitness junkie from the US</p>
+                <h3 className="who-i-am-mini-title">Front-End Developer and fitness junkie from the US</h3>
                 <p className="who-i-am-description">I'm a frontend web developer based out of Illnois, USA. I have caught the programming bug, and love creating web apps that solve real world problems and are fun to use!</p>
                 <p className="who-i-am-description">I specialize in React JS, and have a great understanding of the fundamentals of web dev - HTML, CSS, and Javascript. I also have experience working with Firebase databases.</p>
                 <p className="who-i-am-description">My background is in fitness; I have been in the industry as a trainer for 7+ years, and am looking to hopefully bridge the gap between the physical and technological. I believe there is huge potential in using tech to better our understanding of our own health & fitness.</p>
