@@ -20,9 +20,9 @@ function App() {
         toggleMenu={() => toggleMenu()}
       />
       <Hero />
+      <About />
       <Projects />
       <TechStack />
-      <About />
       <Footer />
     </div>
   )

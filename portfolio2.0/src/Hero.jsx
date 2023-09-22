@@ -2,7 +2,7 @@
 export default function Hero() {
     return (
         <div className="hero-container">
-            <img src="./dist/closeup.png" className="hero-logo"></img>
+            {/* <img src="./dist/sittingportrait.png" className="hero-logo"></img> */}
             <h1 className="hero-title">Gabriel Davila</h1>
             <p className="hero-description-title">Frontend Developer</p>
             <div className="hero-description">

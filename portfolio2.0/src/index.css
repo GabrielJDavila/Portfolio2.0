@@ -1,3 +1,4 @@
+/* ===========GENERAL STYLES============== */
 
 * {
   box-sizing: border-box;
@@ -9,19 +10,26 @@ body {
   text-align: center;
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.5rem;
-  background: rgb(103, 78, 78);
-  color: white;
+  background: rgb(39, 39, 39);
+  color: rgb(88, 153, 170);
   font-family: "Teko", sans-serif;
+}
+
+h1, h2, h3 {
+  color: rgb(88, 153, 170);
 }
 
 p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
+  color: white;
 }
 
 .app-container {
   width: 100%;
 }
+
+/* ============NAV SECTION=============== */
 
 .nav-container1 {
   display: flex;
@@ -55,6 +63,25 @@ p {
   transition: .3s ease-in-out;
 }
 
+.social-icon-container {
+  margin: 1rem 0;
+}
+
+.fa-linkedin,
+.fa-github {
+  width: 2rem;
+  font-size: 2rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: rgb(88, 153, 170);
+}
+
+.fa-linkedin:visited,
+.fa-github:visited {
+  text-decoration: none;
+  color: rgb(88, 153, 170);
+}
+
 .fa-bars {
   transition: .5s all ease;
   scale: 1.5;
@@ -78,7 +105,7 @@ p {
 
 .fa-bars:hover,
 .fa-xmark:hover {
-  color: rgb(204, 44, 44);
+  color: rgb(49, 94, 105);
 }
 
 .nav-item {
@@ -95,16 +122,18 @@ p {
 }
 
 .nav-item:hover {
-  color: rgb(204, 44, 44);
+  color: rgb(88, 153, 170);
   background: rgb(39, 39, 39);
 }
+
+/* ===========HERO SECTION============== */
 
 .hero-container {
   position: relative;
   padding: 10rem 1rem 1rem;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto 6em;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -112,15 +141,16 @@ p {
 
 .hero-logo {
   margin-right: .5rem;
-  width: 15rem;
+  width: 10rem;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 1px rgb(156, 156, 156);
+  box-shadow: 0px 0px 10px 1px rgb(49, 49, 49);
 }
 
 .hero-title {
   margin: 1rem 0 0;
   text-align: center;
   width: 300px;
+  font-size: 4rem;
 }
 
 .hero-description {
@@ -141,32 +171,97 @@ p {
   border-radius: 3px;
 }
 
-.what-i-do-container {
-  background: rgb(75, 75, 75);
-  background-image: url("/css-cocodingbackground.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgb(158, 157, 157);
-  background-blend-mode: multiply;
+/* =============PROJECTS SECTION=============== */
+
+.projects-container {
   color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.what-i-do-container2 {
+.projects-title {}
+
+.rendered-projects {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
 }
 
-.design-container,
-.development-container {
+.project-item-container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  height: 550px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 1rem auto;
+  background: rgb(39, 39, 39);
+  border-radius: 4px;
 }
+
+.project-img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  margin: 1rem auto 0;
+}
+
+.project-link-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  align-items: center;
+}
+
+.project-link {
+  color: rgb(88, 153, 170);
+  width: 50%;
+  transition: .2s ease-in-out;
+  border-radius: 3px;
+  border: 2px solid rgb(39, 39, 39);
+}
+
+.project-link:hover {
+  color: white;
+  border: 2px solid rgb(88, 153, 170);
+}
+
+.divider {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* .project-link:visited {
+  color: rgb(88, 153, 170);
+} */
+
+.project-description {
+  /* background: rgb(94, 171, 254);
+  width: 80%; */
+  /* text-align: center;
+  margin: 0 auto 1.5rem auto;
+  padding: .25rem 1rem;
+  border-radius: 3px; */
+}
+
+#item0 {
+  object-position: 0% 0%;
+  object-fit: cover;
+}
+
+#item1, #item3, #item4 {
+  object-position: 100% 0;
+}
+
+/* ============SKILLS SECTION============== */
 
 .skills-section {
   margin: 4rem 0;
@@ -188,9 +283,37 @@ p {
 .skill-icon {
   margin: 0 .25rem;
   padding: .5rem;
-  border: 2px solid lightgray;
+  border: 2px solid rgb(39, 39, 39);
   width: 80px;
   transition: ease all .5s;
+}
+
+/* ===========ABOUT SECTION============== */
+.what-i-do-container {
+  background: rgb(75, 75, 75);
+  background-image: url("/css-cocodingbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: rgb(158, 157, 157); */
+  background-blend-mode: multiply;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.what-i-do-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.design-container,
+.development-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 1rem auto;
 }
 
 .see-projects-btn {
@@ -227,12 +350,27 @@ p {
 }
 
 .who-i-am-container {
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
+  position: relative;
+}
+
+.about-title {
+  margin-bottom: .5rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-logo {
+  text-align: center;
+  width: 10rem;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 .who-i-am-mini-title {
-  background: rgb(204, 44, 44);
-  color: white;
   width: 70%;
   margin: auto;
   padding: .25rem 1rem;
@@ -244,88 +382,11 @@ p {
   padding: 1rem 1.5rem;
 }
 
-.projects-container {
-  background: rgba(0, 0, 0, 0.566);
-  color: white;
-  padding: 4rem 0 2rem 0;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.portfolio-descrip {
-  /* background: rgb(94, 171, 254);
-  width: 80%; */
-  text-align: center;
-  margin: 0 auto 1.5rem auto;
-  padding: .25rem 1rem;
-  border-radius: 3px;
-}
-
-.mini-proj-container {
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  flex-direction: row;
-}
-
-.portfolio-item {
-  margin: .5rem auto;
-  width: 400px;
-  height: 300px;
-  background: rgb(150, 197, 235);
-  color: black;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px 3px rgb(35, 35, 35);
-  position: relative;
-}
-
-.portfolio-item:focus {
-  position: relative;
-  z-index: 1;
-}
-
-.portfolio-img {
-  transition: 
-      transform 750ms cubic-bezier(.5, 0, .5, 1),
-      opacity 250ms linear;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 10px 1px rgb(35, 35, 35);
-}
-
-.portfolio-img:hover,
-.portfolio-item:focus .portfolio-img {
-  transform: scale(1.2);
-  opacity: .5;
-}
-
-#item0 {
-  object-position: 0% 0%;
-  object-fit: cover;
-}
-
-#item1, #item3, #item4 {
-  object-position: 100% 0;
-}
-
-.project-name {
-  margin-bottom: .5rem;
-  text-decoration: none;
-}
-
-.project-description {
-  margin: 0 auto .5rem;
-}
-
 a {
   text-decoration: none;
 }
 
+/* ===========FOOTER============== */
 footer {
   background: black;
   padding: 3rem 3rem 2rem 3rem;
@@ -340,26 +401,7 @@ footer {
   color:rgb(255, 255, 255);
 }
 
-.social-icon-container {
-  margin: 1rem 0;
-}
-
-.fa-linkedin,
-.fa-github {
-  width: 2rem;
-  font-size: 2rem;
-  margin: 0 1rem;
-  text-decoration: none;
-  color: rgb(204, 44, 44);
-}
-
-.fa-linkedin:visited,
-.fa-github:visited {
-  text-decoration: none;
-  color: rgb(108, 164, 255);
-}
-
-/* media queries */
+/* ===========MEDIA QUERIES================ */
 @media screen and (min-width: 700px) {
 
   .nav-container1 {
