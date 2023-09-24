@@ -21,8 +21,8 @@ function App() {
       />
       <Hero />
       <About />
-      <Projects />
       <TechStack />
+      <Projects />
       <Footer />
     </div>
   )

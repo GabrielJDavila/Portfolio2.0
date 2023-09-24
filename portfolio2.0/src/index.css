@@ -29,6 +29,7 @@ p {
   width: 100%;
 }
 
+
 /* ============NAV SECTION=============== */
 
 .nav-container1 {
@@ -37,6 +38,7 @@ p {
   justify-content: left;
   /* border-bottom: 1px solid black; */
   position: fixed;
+  top: 0;
   z-index: 2;
   height: 4rem;
   padding: 0 1rem;
@@ -130,10 +132,11 @@ p {
 
 .hero-container {
   position: relative;
-  padding: 10rem 1rem 1rem;
+  width: 90%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 6em;
+  margin: 5em 1em;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -151,182 +154,60 @@ p {
   text-align: center;
   width: 300px;
   font-size: 4rem;
-}
-
-.hero-description {
-  width: 80%;
-  margin: 1.25rem 0 0 0;
-  z-index: 1;
-  top: 90px;
+  text-shadow: rgb(49, 94, 105) 1px 0 10px;
 }
 
 .hero-description-title {
-  font-size: 1.5rem;
   color: white;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   padding: .25rem 1rem;
   border-radius: 3px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  
+  font-size: 1.5rem;
+  opacity: 1;
 }
 
-@keyframes slide-out {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -150%);
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 50%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.slide-out {
-  animation-name: slide-out;
-  animation-duration: 2s; /* Adjust this duration for the transition speed */
-  animation-timing-function: ease-in-out; /* Optional timing function */
-  animation-fill-mode: forwards; /* Optional: Keeps the last keyframe state */
-}
-
-.slide-in {
-  animation-name: slide-in;
-  animation-duration: 2s; /* Adjust this duration for the transition speed */
-  animation-timing-function: ease-in-out; /* Optional timing function */
-  animation-fill-mode: forwards; /* Optional: Keeps the last keyframe state */
-}
-
-/* =============PROJECTS SECTION=============== */
-
-.projects-container {
-  color: white;
-  padding: 4rem 0 2rem 0;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.projects-title {}
-
-.rendered-projects {
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  flex-direction: row;
-}
-
-.project-item-container {
-  position: relative;
-  padding: 1rem;
-  width: 100%;
-  height: 550px;
+.hero-text-container {
   display: flex;
   flex-direction: column;
-  background: rgb(39, 39, 39);
-  border-radius: 4px;
 }
 
-.project-img {
-  width: 80%;
-  height: 300px;
-  object-fit: cover;
+.see-projects-btn {
+  width: 150px;
+  height: 60px;
+  padding: 1re;
   margin: 1rem auto 0;
-}
-
-.project-link-container {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 1rem 0 0;
-  align-items: center;
-}
-
-.project-link {
-  color: rgb(88, 153, 170);
-  width: 50%;
-  transition: .2s ease-in-out;
-  border-radius: 3px;
-  border: 2px solid rgb(39, 39, 39);
-}
-
-.project-link:hover {
+  background: purple;
+  border: none;
   color: white;
-  border: 2px solid rgb(88, 153, 170);
+  font-family: "teko", sans-serif;
+  font-size: 1.25rem;
+  border-radius: 2px;
+  transition: .5s ease all;
+  cursor: pointer;
 }
 
-.divider {
-  margin: 0;
-  font-weight: bold;
+.see-projects-btn:hover {
+  scale: 1.1;
+  background: rgb(102, 5, 102);
 }
 
-/* .project-link:visited {
-  color: rgb(88, 153, 170);
-} */
+@keyframes arrowAnimation {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
 
-.project-description {
-  /* background: rgb(94, 171, 254);
-  width: 80%; */
-  /* text-align: center;
-  margin: 0 auto 1.5rem auto;
-  padding: .25rem 1rem;
-  border-radius: 3px; */
+  50% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
 }
 
-#item0 {
-  object-position: 0% 0%;
-  object-fit: cover;
-}
-
-#item1, #item3, #item4 {
-  object-position: 100% 0;
-}
-
-/* ============SKILLS SECTION============== */
-
-.skills-section {
-  margin: 4rem 0;
-}
-
-.skills-title {
-  margin-top: 0;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 2rem 0 0 0;
-}
-
-.skill-icon {
-  margin: 0 .25rem;
-  padding: .5rem;
-  border: 2px solid rgb(39, 39, 39);
-  width: 80px;
-  transition: ease all .5s;
+.fa-arrow-down {
+  margin-top: 1rem;
+  animation: arrowAnimation 2s ease-in-out infinite;
 }
 
 /* ===========ABOUT SECTION============== */
@@ -335,7 +216,6 @@ p {
   background-image: url("/css-cocodingbackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: rgb(158, 157, 157); */
   background-blend-mode: multiply;
   color: white;
   display: flex;
@@ -355,26 +235,6 @@ p {
   flex-direction: column;
   max-width: 400px;
   margin: 1rem auto;
-}
-
-.see-projects-btn {
-  width: 150px;
-  height: 60px;
-  padding: 1re;
-  margin: 1rem auto;
-  background: rgb(204, 44, 44);
-  border: none;
-  color: white;
-  font-family: "teko", sans-serif;
-  font-size: 1.25rem;
-  border-radius: 2px;
-  transition: .5s ease all;
-  cursor: pointer;
-}
-
-.see-projects-btn:hover {
-  scale: 1.2;
-  background: rgb(136, 31, 31);
 }
 
 .what-i-do-mini-title {
@@ -421,12 +281,122 @@ p {
 
 .who-i-am-description {
   padding: 1rem 1.5rem;
-  border: 2px solid rgb(88, 153, 170);
   margin: 2rem;
 }
 
 a {
   text-decoration: none;
+}
+
+/* ============SKILLS SECTION============== */
+
+.skills-section {
+  margin: 4rem 0;
+}
+
+.skills-title {
+  margin-top: 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.skill-icon {
+  margin: 0 .25rem;
+  padding: .5rem;
+  border: 2px solid rgb(39, 39, 39);
+  width: 80px;
+  transition: ease all .5s;
+}
+
+/* =============PROJECTS SECTION=============== */
+
+.projects-container {
+  color: white;
+  padding: 0;
+  width: 90%;
+  margin: 8rem auto;
+}
+
+.rendered-projects {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.project-item-container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(49, 94, 105);
+  border-radius: 6px;
+  /* box-shadow: 0 0 10px 1px rgb(49, 94, 105); */
+}
+
+.project-img {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  margin: 1rem auto 0;
+  border: 3px solid rgb(68, 68, 68);
+  box-shadow: 0 0 10px 1px rgb(68, 68, 68);
+  border-radius: 6px;
+}
+
+.project-link-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+ max-width: 300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  align-items: center;
+}
+
+.project-link {
+  color: rgb(88, 153, 170);
+  width: 50%;
+  transition: .2s ease-in-out;
+  border-radius: 3px;
+  border: 2px solid rgb(49, 94, 105)
+}
+
+.project-link:hover {
+  color: white;
+  border: 2px solid rgb(88, 153, 170);
+}
+
+.divider {
+  margin: 0;
+  font-weight: bold;
+}
+
+#item0 {
+  object-position: 0% 0%;
+  object-fit: cover;
+}
+
+#item1, #item3, #item4 {
+  object-position: 100% 0;
 }
 
 /* ===========FOOTER============== */
@@ -452,17 +422,16 @@ footer {
   }
 
   .hero-container {
-    width: 90%;
-    max-width: 625px;
+    width: 100%;
     height: 500px;
-    padding: 1rem;
+    padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 3em auto 1rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
   }
   
   .hero-logo {
@@ -476,27 +445,22 @@ footer {
   .hero-title {
     width: 100%;
     font-size: 6.5em;
-    text-align: center;
+    text-align: left;
   }
 
-  .hero-description {
+  .hero-text-container {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    text-align: right;
-    height: 50px;
+    flex-wrap: nowrap;
+    justify-content: left;
     width: 100%;
-    max-width: 900px;
+    margin: 0 auto 0 0;
   }
 
   .hero-description-title {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     margin: 0 auto 0 0;
-  
+    width: 500px;
   }
 
   .skill-icon {
