@@ -11,18 +11,19 @@ export default [
     },
     {
         id: "item1",
-        name: "Tenzies",
-        tools: "React, CSS, HTML",
-        description: "Tenzies is a game where you roll dice until all dice are matching numbers.",
-        source: "https://beamish-ganache-a020c1.netlify.app/",
-        img: "./tenzies-screenshot.png",
-        alt: "screenshot of tenzies app"
+        name: "H4 Team Notes App (on going)",
+        tools: "React Router, Firestore, CSS, HTML",
+        description: "This is a team notes app for a highly successful fitness studio; it includes push notifications and dynamic rendering of information from Firestore. Built with React Router.",
+        source: "https://main--beautiful-starlight-72e7d4.netlify.app/",
+        github: "https://github.com/GabrielJDavila/h4teamnotes2.0",
+        img: "./dist/h4teamnotes.png",
+        alt: "screenshot of h4app app"
     },
     {
         id: "item2",
         name: "Quizzical",
         tools: "React, Open Trivia Database API, CSS, HTML",
-        description: "Quizzical tests your knowledge of popular videogame trivia.",
+        description: "Quizzical tests your knowledge of popular videogame trivia. Bring your A-game!",
         source: "https://startling-begonia-80cfd3.netlify.app/",
         github: "https://github.com/GabrielJDavila/Quizzical",
         img: "./quizzical-screenshot.png",

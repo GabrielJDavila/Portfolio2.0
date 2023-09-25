@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Nav from "./Nav"
 import Hero from "./Hero"
 import About from "./About"
@@ -8,6 +8,20 @@ import Footer from "./Footer"
 
 function App() {
   const [showMenu, setShowMenu] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  
+  const updateWindowWidth = () => {
+    setWindowWidth(window.innerWidth)
+  }
+  useEffect(() => {
+
+    window.addEventListener("resize", updateWindowWidth)
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth)
+    }
+
+  }, [])
 
   function toggleMenu() {
     setShowMenu(prev => !prev)
@@ -18,6 +32,7 @@ function App() {
       <Nav
         showMenu={showMenu}
         toggleMenu={() => toggleMenu()}
+        windowWidth={windowWidth}
       />
       <Hero />
       <About />

@@ -24,13 +24,21 @@ export default function Nav(props) {
             {!props.showMenu ? <i className="fa-solid fa-bars" onClick={props.toggleMenu}></i> :
             <i className="fa-solid fa-xmark" onClick={props.toggleMenu} style={position}></i>
             }
+            {props.windowWidth <= 800 ?
             <nav className="nav-container2" style={styles}>
                 <a href="/"><li className="nav-item">Home</li></a>
                 <a href="#projects" onClick={props.toggleMenu}><li className="nav-item">My Work</li></a>
-                <a href="#services" onClick={props.toggleMenu}><li className="nav-item">Services</li></a>
                 <a href="#about" onClick={props.toggleMenu}><li className="nav-item">About</li></a>
                 <a href="#contact" onClick={props.toggleMenu}><li className="nav-item">Contact</li></a>
             </nav>
+            :
+            <nav className="nav-container2-large">
+                <a href="/"><li className="nav-item">Home</li></a>
+                <a href="#projects" onClick={props.toggleMenu}><li className="nav-item">My Work</li></a>
+                <a href="#about" onClick={props.toggleMenu}><li className="nav-item">About</li></a>
+                <a href="#contact" onClick={props.toggleMenu}><li className="nav-item">Contact</li></a>
+            </nav>
+            }
         </div>
     )
 }

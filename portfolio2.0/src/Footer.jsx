@@ -1,12 +1,13 @@
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer id="contact" className="footer">
+            <div className="contact-btns-container">
+                <h2 className="contact-title contact-item">Get a hold of me</h2>
+                <i className="fa-solid fa-arrow-right contact-item"></i>
+                <a href="mailto:gdavila0819@gmail.com" className="contact-btn email contact-item">email</a>
+            </div>
             <span>&copy; 2023 Gabe Davila</span>
-            {/* <div className="social-icon-container">
-                <a href="https://www.linkedin.com/in/gabrieljdavila/" target="_blank" alt="linkedin social icon"><i className="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/GabrielJDavila" target="_blank" alt="github social icon"><i className="fa-brands fa-github"></i></a>
-            </div> */}
         </footer>
     )
 }
