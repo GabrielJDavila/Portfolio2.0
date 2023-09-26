@@ -16,7 +16,7 @@ export default [
         description: "This is a team notes app for a highly successful fitness studio; it includes push notifications and dynamic rendering of information from Firestore. Built with React Router.",
         source: "https://main--beautiful-starlight-72e7d4.netlify.app/",
         github: "https://github.com/GabrielJDavila/h4teamnotes2.0",
-        img: "./dist/h4teamnotes.png",
+        img: "./h4teamnotes.png",
         alt: "screenshot of h4app app"
     },
     {
