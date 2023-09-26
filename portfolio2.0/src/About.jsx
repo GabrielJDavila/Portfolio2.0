@@ -5,7 +5,7 @@ export default function About() {
 
     return (
         <main id="about" className="about-section">
-            <img src="./dist/sittingportrait.png" className="about-img" />
+            <img src="./sittingportrait.png" className="about-img" />
             <div className="about-descrip-container">
                 <h2 className="about-title">Who I am</h2>    
                 <p className="who-i-am-description">I'm a frontend web developer based out of Illnois, USA. I have caught the programming bug, and love creating web apps that solve real world problems and are fun to use!<br></br><br></br>
