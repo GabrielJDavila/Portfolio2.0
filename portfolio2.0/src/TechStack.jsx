@@ -1,7 +1,7 @@
 
 export default function TechStack() {
     return (
-        <div className="skills-section">
+        <div id="skills" className="skills-section">
             <h2 className="skills-title">Things im good at</h2>
             <div className="skills-container" >
                 <div className="skill-icon-container">
