@@ -74,16 +74,26 @@ p {
 }
 
 .fa-linkedin,
-.fa-github {
+.fa-github,
+.fa-file-arrow-down {
   width: 2rem;
   font-size: 2rem;
   margin: 0 1rem;
   text-decoration: none;
   color: rgb(88, 153, 170);
+  transition: .2s ease-in-out;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-file-arrow-down:hover {
+  color: rgb(136, 198, 214);
+  scale: 1.1;
 }
 
 .fa-linkedin:visited,
-.fa-github:visited {
+.fa-github:visited,
+.fa-file-arrow-down:visited {
   text-decoration: none;
   color: rgb(88, 153, 170);
 }
