@@ -39,7 +39,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: left;
-  /* border-bottom: 1px solid black; */
   position: fixed;
   top: 0;
   z-index: 2;
@@ -131,7 +130,6 @@ p {
   padding: 1rem;
   width: 100%;
   font-size: 2rem;
-  /* font-family: 'Righteous', cursive; */
   transition: .5s all ease;
   color: white;
   cursor: pointer;

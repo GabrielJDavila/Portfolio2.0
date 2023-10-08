@@ -47,13 +47,6 @@ export default function Nav(props) {
                     <li className="nav-item">Contact</li>
                 </Link>
             </nav>
-            // <nav className="nav-container2" style={styles}>
-            //     <a href="/"><li className="nav-item">Home</li></a>
-            //     <a href="#about" onClick={toggleMenu}><li className="nav-item">About</li></a>
-            //     <a href="#skills" onClick={toggleMenu}><li className="nav-item">Skills</li></a>
-            //     <a href="#projects" onClick={toggleMenu}><li className="nav-item">My Work</li></a>
-            //     <a href="#contact" onClick={toggleMenu}><li className="nav-item">Contact</li></a>
-            // </nav>
             :
             <nav className="nav-container2-large">
                 <a href="/">
