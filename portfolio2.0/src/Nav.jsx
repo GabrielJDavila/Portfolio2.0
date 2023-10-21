@@ -23,7 +23,7 @@ export default function Nav(props) {
             <div className="social-icon-container">
                 <a href="https://www.linkedin.com/in/gabrieljdavila/" target="_blank" alt="linkedin social icon"><i className="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/GabrielJDavila" target="_blank" alt="github social icon"><i className="fa-brands fa-github"></i></a>
-                <a href="./gabewebdevresume.pdf" target="_blank" alt="resume pdf icon"><i class="fa-solid fa-file-arrow-down"></i></a>
+                <a href="./gabeDavilaWebDevResume2023.pdf" target="_blank" alt="resume pdf icon"><i class="fa-solid fa-file-arrow-down"></i></a>
             </div>
             
             {!showMenu ? <i className="fa-solid fa-bars" onClick={toggleMenu}></i> :
