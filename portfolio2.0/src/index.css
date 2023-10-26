@@ -233,8 +233,9 @@ p {
 }
 
 .who-i-am-description {
-  padding: 1rem 1.5rem;
-  margin: 2rem;
+  padding: 0;
+  margin: 1.5rem;
+  text-align: left;
 }
 
 a {
@@ -505,6 +506,10 @@ footer {
     width: 50%;
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .who-i-am-description {
+    margin: 1rem;
   }
 
   .project-item-container {

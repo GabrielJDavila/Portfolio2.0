@@ -4,7 +4,7 @@ export default [
         name: "H4 Team Notes App (on going)",
         tools: "React Router, Firestore, CSS, HTML",
         description: "This is a team notes app for a highly successful fitness studio; it includes push notifications and dynamic rendering of information from a database. Allows users to create and share notes.",
-        source: "https://main--beautiful-starlight-72e7d4.netlify.app/",
+        source: "https://h4teamnotes.netlify.app",
         github: "https://github.com/GabrielJDavila/h4teamnotes2.0",
         img: "./h4teamnotes.png",
         alt: "screenshot of h4app app"
@@ -14,7 +14,7 @@ export default [
         name: "Income & Expense Tracker",
         tools: "React, React Router, Firebase, CSS, HTML",
         description: "Income and expense tracker for a small cleaning business. Simple and user-friendly application that has a real-world use case.",
-        source: "https://gregarious-moonbeam-69026b.netlify.app/",
+        source: "https://mgbudgettracker.netlify.app/",
         github: "https://github.com/GabrielJDavila/mgcleantracker",
         img: "./mgcleantracker.png",
         alt: "screenshot of mgclean tracker"
@@ -36,7 +36,7 @@ export default [
         description: "Quizzical tests your knowledge of popular videogame trivia. Bring your A-game!",
         source: "https://startling-begonia-80cfd3.netlify.app/",
         github: "https://github.com/GabrielJDavila/Quizzical",
-        img: "./quizzical-screenshot.png",
+        img: "./quizzical-screenshot2.png",
         alt: "screenshot of quizzical app"
     },
     {
