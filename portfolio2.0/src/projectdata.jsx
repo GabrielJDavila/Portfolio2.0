@@ -34,7 +34,7 @@ export default [
         name: "Quizzical",
         tools: "React, Open Trivia Database API, CSS, HTML",
         description: "Quizzical tests your knowledge of popular videogame trivia. Bring your A-game!",
-        source: "https://startling-begonia-80cfd3.netlify.app/",
+        source: "https://gabedavilaquizzical.netlify.app/",
         github: "https://github.com/GabrielJDavila/Quizzical",
         img: "./quizzicalscreenshot.png",
         alt: "screenshot of quizzical app"
