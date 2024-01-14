@@ -10,7 +10,7 @@ export default function Nav(props) {
 
     const styles = {
         width: showMenu ? "100%" : "0",
-        height: showMenu ? "420px" : "0",
+        height: showMenu ? "475px" : "0",
         transition: showMenu ? ".3sec all ease" : ""
     }
 
@@ -34,6 +34,9 @@ export default function Nav(props) {
                 <a href="/">
                     <li className="nav-item">Home</li>
                 </a>
+                <a href="/blog">
+                    <li className="nav-item">My Thoughts</li>
+                </a>
                 <Link to="about" onClick={toggleMenu} smooth={true} offset={-50} duration={500}>
                     <li className="nav-item">About</li>
                 </Link>
@@ -51,6 +54,9 @@ export default function Nav(props) {
             <nav className="nav-container2-large">
                 <a href="/">
                     <li className="nav-item">Home</li>
+                </a>
+                <a href="/blog">
+                    <li className="nav-item">My Thoughts</li>
                 </a>
                 <Link to="about" onClick={toggleMenu} smooth={true} offset={-50} duration={500}>
                     <li className="nav-item">About</li>

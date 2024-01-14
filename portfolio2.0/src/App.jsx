@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef } from 'react'
+// import { BrowserRouter, Routes, Route } from "react-router-dom"
+// import Layout from './components/Layout'
 import Nav from "./Nav"
 import Hero from "./Hero"
 import About from "./About"
 import Projects from "./Projects"
 import TechStack from "./TechStack"
 import Footer from "./Footer"
+import MarkdownPost from './MarkdownPost'
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -27,6 +30,13 @@ function App() {
   }, [])
 
   return (
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path='/' element={<Layout />}>
+    //       <Route index element={<Hero />} />
+    //       <Route path="blog" element={<MarkdownPost />} />
+    //     </Route>
+    //   </Routes>
     <div className="app-container" >
       <Nav
         windowWidth={windowWidth}
@@ -38,6 +48,7 @@ function App() {
       <Projects />
       <Footer />
     </div>
+    // </BrowserRouter>
   )
 }
 
