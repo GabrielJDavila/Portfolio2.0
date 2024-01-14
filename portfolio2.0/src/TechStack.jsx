@@ -13,6 +13,18 @@ export default function TechStack() {
                     <h3 className="skill-name">React</h3>
                 </div>
                 <div className="skill-icon-container">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="skill-icon" />
+                    <h3 className="skill-name">Node.js</h3>
+                </div>
+                <div className="skill-icon-container">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="skill-icon" />
+                    <h3 className="skill-name">TypeScript</h3>
+                </div>
+                <div className="skill-icon-container">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="skill-icon" />
+                    <h3 className="skill-name">TailwindCSS</h3>
+                </div>
+                <div className="skill-icon-container">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="skill-icon" />
                     <h3 className="skill-name">HTML</h3>
                 </div>
