@@ -34,9 +34,9 @@ export default function Nav(props) {
                 <a href="/">
                     <li className="nav-item">Home</li>
                 </a>
-                <a href="/blog">
+                {/* <a href="/blog">
                     <li className="nav-item">My Thoughts</li>
-                </a>
+                </a> */}
                 <Link to="about" onClick={toggleMenu} smooth={true} offset={-50} duration={500}>
                     <li className="nav-item">About</li>
                 </Link>
@@ -55,9 +55,9 @@ export default function Nav(props) {
                 <a href="/">
                     <li className="nav-item">Home</li>
                 </a>
-                <a href="/blog">
+                {/* <a href="/blog">
                     <li className="nav-item">My Thoughts</li>
-                </a>
+                </a> */}
                 <Link to="about" onClick={toggleMenu} smooth={true} offset={-50} duration={500}>
                     <li className="nav-item">About</li>
                 </Link>

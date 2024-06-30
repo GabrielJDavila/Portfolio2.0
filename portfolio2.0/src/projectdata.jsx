@@ -1,7 +1,7 @@
 export default [
     {
         id: "item0",
-        name: "H4 Team Notes App (on going)",
+        name: "H4 Team Notes App",
         tools: "React Router, Firestore, CSS, HTML",
         description: "This is a team notes app for a highly successful fitness studio; it includes push notifications and dynamic rendering of information from a database. Allows users to create and share notes.",
         source: "https://h4teamnotes.netlify.app",
@@ -11,9 +11,9 @@ export default [
     },
     {
         id: "item1",
-        name: "Income & Expense Tracker",
+        name: "M&G Income & Expense Tracker",
         tools: "React, React Router, Firebase, CSS, HTML",
-        description: "Income and expense tracker for a small cleaning business. Simple and user-friendly application that has a real-world use case.",
+        description: "Income and expense tracker for a small cleaning business.",
         source: "https://mgbudgettracker.netlify.app/",
         github: "https://github.com/GabrielJDavila/mgcleantracker",
         img: "./mgbudgettrackerscreenshot.png",
@@ -27,27 +27,27 @@ export default [
         source: "https://mgcleanpros.com/",
         github: "https://github.com/GabrielJDavila/mgcleansite",
         img: "./mgcleanprosscreenshot.png",
-        alt: "screenshot of mgcleanpros website"
+        alt: "screenshot of mgcleanpros website."
     },
     {
         id: "item3",
-        name: "Quizzical",
-        tools: "React, Open Trivia Database API, CSS, HTML",
-        description: "Quizzical tests your knowledge of popular videogame trivia. Bring your A-game!",
-        source: "https://gabedavilaquizzical.netlify.app/",
-        github: "https://github.com/GabrielJDavila/Quizzical",
-        img: "./quizzicalscreenshot.png",
-        alt: "screenshot of quizzical app"
+        name: "French Tutor Website",
+        tools: "React, JavaScript, CSS, HTML",
+        description: "A Website built for a french tutoring business. The focus was on building an eye-catching design and good SEO practices.",
+        source: "https://frenchmasteryblueprint.com/",
+        github: "https://github.com/GabrielJDavila/FrenchMasteryBluePrint",
+        img: "./fmbscreenshot.png",
+        alt: "screenshot of french mastery blueprint website's homepage."
     },
     {
         id: "item4",
-        name: "Movie Watchlist",
-        tools: "Javascript, OMDb API, CSS, HTML",
-        description: "This project lets you search movies and add them to your personal watchlist.",
-        source: "https://gabemoviewatchlist.netlify.app",
-        github: "https://github.com/GabrielJDavila/movieWatchlist",
-        img: "./moviewatchlistscreenshot.png",
-        alt: "screenshot of watchlist app"
+        name: "The Fitbook",
+        tools: "React, Javascript, Firebase, CSS, HTML",
+        description: "A fitness app that lets users create profiles, track and log workouts, and shows their progress over time. In the future I plan to implement AI to help users build and modify workout routines.",
+        source: "https://thefitbook.netlify.app/",
+        github: "https://github.com/GabrielJDavila/NewFitnessJournal",
+        img: "./fitbookscreenshot.png",
+        alt: "screenshot of The Fitbook application workout log page."
     },
     {
         id: "item5",
@@ -57,6 +57,6 @@ export default [
         source: "https://sampleinvoicecreator.netlify.app",
         github: "https://github.com/GabrielJDavila/InvoiceCreator",
         img: "./invoicecreatorscreenshot.png",
-        alt: "screenshot of invoice creator app"
+        alt: "screenshot of invoice creator app."
     }
 ]

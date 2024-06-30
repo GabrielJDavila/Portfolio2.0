@@ -20,8 +20,8 @@ export default function TechStack() {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" className="skill-icon" />
                     <h3 className="skill-name">TypeScript</h3>
                 </div>
-                <div className="skill-icon-container">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="skill-icon" />
+                <div className="skill-icon-container">   
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="skill-icon" />
                     <h3 className="skill-name">TailwindCSS</h3>
                 </div>
                 <div className="skill-icon-container">
